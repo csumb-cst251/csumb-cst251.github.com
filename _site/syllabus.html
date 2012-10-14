@@ -2,44 +2,90 @@
 <html>
 	<head>
 		<title>CST 251 | Syllabus</title>
-		<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="/css/prettify.css"/>
-		<link rel="stylesheet" href="/css/docs.css"/>
+		<link rel="stylesheet" href="/course-website/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="/course-website/css/prettify.css"/>
+		<link rel="stylesheet" href="/course-website/css/course.css"/>
 
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".cst-nav-list">
 	  <div class="navbar">
       <div class="navbar-inner">
-        <a class="brand" href="#">CST 251: Web tools</a>
+        <a class="brand" href="/">CST 251: Web tools</a>
         <ul class="nav">
-          <li><a href="/">Home</a></li>
           <li><a href="/syllabus.html">Syllabus</a></li>
-          <li><a href="/schedule.html">Schedule</a></li>
+          <li><a href="/#this-week">This week</a></li>
+          <li><a href="/#schedule">Schedule</a></li>
+          <li class="dropdown">
+            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+              <li><a tabindex="-1" href="/projects/week-1">Week 1</a></li>
+              <li><a tabindex="-1" href="/projects/week-2">Week 2</a></li>
+            </ul>
+          </li>
+          <li><a href="/resources.html">Resources</a></li>
         </ul>
       </div>
     </div>
-		<div class="container-fluid">
+		<div class="container">
 			<h1>CST 251: Web tools</h1>
+
+<hr />
+
 <h2>Course syllabus</h2>
 
-<div class="cst-example">
-            <div class="alert">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <strong>Warning!</strong> Best check yo self, you're not looking too good.
-            </div>
-          </div>
+<!----Notes
+*we will treat the course kinda like a team in a small dev shop
+*use git to find homework, collaborate, turn in homework
+*make changes to syllabus and give push request if you have any questions
+*we'll use comments on code for feedback, grades in iLearn
+-->
 
-<pre class="prettyprint lang-html linenums">
-&lt;div class="alert"&gt;
-  &lt;button type="button" class="close" data-dismiss="alert"&gt;&times;&lt;/button&gt;
-  &lt;strong&gt;Warning!&lt;/strong&gt; Best check yo self, you're not looking too good.
-&lt;/div&gt;
-</pre>
+
+<hr />
+
+<h2>Projects &amp; grading</h2>
+
+<p>Projects (a.k.a. "homework") turned in via Git, picked up automatically every saturday night to see who turned in work on time. You get graded on effort if you turn it in on time, you can also take feedback to fix the errors.</p>
+
+<p>Web tools not only include things that build the web, but also tools that professionals in the field use to manage projects and work as a team. You will be expected after the first few weeks of class to turn in all projects using the <a href="http://git-scm.com/">Git version control system</a> on <a href="http://github.com">GitHub</a>. Each week is in the class repository, and students are expected to use the below steps to turn in projects by Friday night of every week, unless the project has an explicit multi-week timeline.</p>
+
+<h4>Projects</h4>
+
+<p>Each week is structured around one or many small projects. Each project can be found in each week's folder under the course repository. <strong>Work in your own fork</strong> of the course repository, and remember to <strong>commit often</strong> so your work is safe and I can see your work.</p>
+
+<p>To give you an idea of working with clients, each project will be delivered as a <em>narrative</em> with a (usually funny) client and a description of their audience and what the project is all about. As we progress through the course, you will see more exhaustive and real-world case studies provided by contacts in the industry. Names will be changed to protect the <strike>innocent</strike> guilty.</p>
+
+<p>Each project may have multiple folders inside it, but will always includ a <strong>README</strong> file which explains what you will be doing, including how the project will be graded. Here's an example folder:</p>
+
+<pre><code>/projects/week1/  &lt;-- Each week's project can be found under the projects folder
+  README.md       &lt;-- The readme file explains what's expected of you for that week
+  source-files/   &lt;-- Some projects have additional assets the client provided
+  project/        &lt;-- The folder where you should place your project
+</code></pre>
+
+<h4>Grading</h4>
+
+<p>This course is structured around how small web deveopment shops work, which will be where most students will hopefully be working after they graduate. Web developers aren't expected to know everything on the top of their head, but instaed use a lot of notes, snippets, and Google searches to figure out difficult problems. Because of this, you won't be taking any tests, and instead will be given projects. Most of these will be week-long, some might take several weeks to complete.</p>
+
+<p>While it's important to turn work in on time for full credit, you won't be expected to have everything perfect. The grading of this course is base don the premise that <strong>you will not learn anything unless you make mistakes</strong>, and as such, many projects are set up to make you <strong>fail often and in spectacular ways</strong>. I will give you feedback on each project via comments on your commit, as well as opening issues in your queue if I think you need to rethink your approach.</p>
+
+<p>To turn in your work, just commit your project to your fork of the course repository. You should <strong>commit often</strong> while you do your work, as multiple commits will show me what you were thinking while you tackled the project, and prevent unnecessary questions. At the deadline, an automated script will run to download everyone's work and make a snapshot so I can see who was on time and hav ea copy of everything week-by-week. As long as your project is pushed to GitHub, it's considered turned in.</p>
+
+<h5>How grading works</h5>
+
+<ol>
+<li><strong>Punctuality</strong> -- Web workers are always paid on deadlines. Meet your deadline for each project to ensure you have a shot at getting 100% of the points. If you miss a deadline, you will only get at most 50% of the points for that week.</li>
+<li><strong>Effort</strong> -- You can't just toss a file into the project folder for that week to "get your foot in the door." If you made a concerted effort, you will have a shot at 100%.</li>
+<li><strong>Responsiveness</strong> -- If I say "awesome job, you're done" then you're done. No need to look back on that project. However, there will always be little comments that I leave, or issues that need to be resolved. Being responsive to these notes is crucial in the development world, and will be expected of you in the course.</li>
+<li><strong>Completeness</strong> -- At the end of the semester, I will then take your complete repository and check it out again. For every week where you didn't get 100%, I will look back in that folder and see if there were any new commits since then. If there were, I will reevaluate your work, see if you responded to my issues, and re-grade you for that week's project.</li>
+</ol>
+
+
 		</div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script src="/js/prettify.js"></script>
-  <script src="/js/docs.js"></script>
-  <script src="/bootstrap/js/bootstrap.min.js"
+  <script src="/course-website/js/prettify.js"></script>
+  <script src="/course-website/js/course.js"></script>
+  <script src="/course-website/bootstrap/js/bootstrap.min.js"></script>
 
 	</body>
 </html>
