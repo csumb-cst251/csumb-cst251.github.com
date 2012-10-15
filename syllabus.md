@@ -68,11 +68,11 @@ Projects (a.k.a. "homework") will turned in via Git, and picked up automatically
 
 #### Projects
 
-Each week is structured around one or many small projects. Each project can be found in each week's folder under the course repository. **Work in your own fork** of the course repository, and remember to **commit often** so your work is safe and I can see your work.
+Each week is structured around one or many small projects. Each project can be found in each week's folder under the `projects` folder in the course repository. **Work in your own fork** of the course repository, and remember to **commit often** so your work is safe and I can see your process.
 
-To give you an idea of working with clients, each project will be delivered as a *narrative* with a (usually funny) client and a description of their audience and what the project is all about. As we progress through the course, you will see more exhaustive and real-world case studies provided by contacts in the industry. Names will be changed to protect the <strike>innocent</strike> guilty.
+To give you an idea of working with clients, each project will be delivered as a *narrative* with a (usually entertaining) client and a description of their audience and what the project is all about. As we progress through the course, you will see more exhaustive and real-world case studies provided by contacts in the industry. Names will be changed to protect the <strike>innocent</strike> guilty.
 
-Each project may have multiple folders inside it, but will always includ a **README** file which explains what you will be doing, including how the project will be graded. Here's an example folder:
+Each project may have multiple folders inside it, but will always includ a **README** file which explains what the fictitious client is expecting. Here's an example folder:
 
     /projects/week1/  <-- Each week's project can be found under the projects folder
       README.md       <-- The readme file explains what's expected of you for that week
@@ -83,7 +83,7 @@ Each project may have multiple folders inside it, but will always includ a **REA
 
 This course is structured around how small web deveopment shops work, which will be where most students will hopefully be working after they graduate. Web developers aren't expected to know everything on the top of their head, but instaed use a lot of notes, snippets, and Google searches to figure out difficult problems. Because of this, you won't be taking any tests, and instead will be given projects. Most of these will be week-long, some might take several weeks to complete.
 
-While it's important to turn work in on time for full credit, you won't be expected to have everything perfect. The grading of this course is base don the premise that **you will not learn anything unless you make mistakes**, and as such, many projects are set up to make you **fail often and in spectacular ways**. I will give you feedback on each project via comments on your commit, as well as opening issues in your queue if I think you need to rethink your approach.
+While it's important to turn work in on time for full credit, you won't be expected to have everything perfect. The grading of this course is based on the premise that **you will not learn anything unless you make mistakes**, and as such, many projects are set up to make you **fail often and in spectacular ways**. I will give you feedback on each project via comments on your commit, as well as opening issues in your queue if I think you need to rethink your approach.
 
 To turn in your work, just commit your project to your fork of the course repository. You should **commit often** while you do your work, as multiple commits will show me what you were thinking while you tackled the project, and prevent unnecessary questions. At the deadline, an automated script will run to download everyone's work and make a snapshot so I can see who was on time and hav ea copy of everything week-by-week. As long as your project is pushed to GitHub, it's considered turned in.
 
@@ -98,6 +98,6 @@ To turn in your work, just commit your project to your fork of the course reposi
 About me
 --------
 
-Just two paragraphs here so you know I have some idea of what I'm talking about. I'm currently the web developer for CSUMB. Right, this CSUMB. I've been doing that with some success for about five years. Before I worked here, I was a baker, a farmer, and a somewhat professional artist. I am the maintainer of a ton of open source back-end and front-end libraries and projects, in [Drupal](drupal.org/user/125882) and [elsewhere](https://github.com/kevee).
+Just two paragraphs here so you know I have some idea of what I'm talking about. I'm currently the web developer for CSUMB. I've been doing that for about five years. Before I worked here, I was a baker, a farmer, and a somewhat professional artist. I am the maintainer of a ton of open source back-end and front-end libraries and projects, in [Drupal](drupal.org/user/125882) and [elsewhere](https://github.com/kevee).
 
-However, I've always been workin' the web since it was like, a thing. I worked summers from Junior High to High School writing printer command software for a legal software company. I built one of the first school district websites in the state of California in 1994, which ran on a dinky mac in a closet and we were excited when we got 10 visitors. Every once and a while we'd get a call that the website was down, and I would have to climb on the roof to fix the microwave antenna that connected us to the internet.
+However, I've always been workin' the web since the nacent days of BBSes and squealy modems. I worked summers from Junior High to High School writing printer command software for a legal software company. I built one of the first school district websites in the state of California in 1994, which ran on a dinky mac in a closet and we were excited when we got 10 visitors. Every once and a while we'd get a call that the website was down, and I would have to climb on the roof to fix the microwave antenna that connected us to the internet.
