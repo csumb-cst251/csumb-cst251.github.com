@@ -93,11 +93,3 @@ To turn in your work, just commit your project to your fork of the course reposi
 2. **Effort** -- You can't just toss a file into the project folder for that week to "get your foot in the door." If you made a concerted effort, you will have a shot at 100%.
 3. **Responsiveness** -- If I say "awesome job, you're done" then you're done. No need to look back on that project. However, there will always be little comments that I leave, or issues that need to be resolved. Being responsive to these notes is crucial in the development world, and will be expected of you in the course.
 4. **Completeness** -- At the end of the semester, I will then take your complete repository and check it out again. For every week where you didn't get 100%, I will look back in that folder and see if there were any new commits since then. If there were, I will reevaluate your work, see if you responded to my issues, and re-grade you for that week's project.
-
---------
-About me
---------
-
-Just two paragraphs here so you know I have some idea of what I'm talking about. I'm currently the web developer for CSUMB. I've been doing that for about five years. Before I worked here, I was a baker, a farmer, and a somewhat professional artist. I am the maintainer of a ton of open source back-end and front-end libraries and projects, in [Drupal](drupal.org/user/125882) and [elsewhere](https://github.com/kevee).
-
-However, I've always been on the web since the nacent days of BBSes and squealy modems. I worked summers from Junior High to High School writing printer command software for a legal software company. I built one of the first school district websites in the state of California in 1994, which ran on a dinky Mac in a closet and we were excited when we got 10 visitors. Every once and a while we'd get a call that the website was down, and I would have to climb on the roof to fix the microwave antenna that connected us to the internet. 
