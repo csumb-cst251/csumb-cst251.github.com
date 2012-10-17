@@ -17,9 +17,7 @@
           <li><a href="/#schedule">Schedule</a></li>
           <li class="dropdown">
             <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-              <li><a tabindex="-1" href="/projects/week-1">Week 1</a></li>
-              <li><a tabindex="-1" href="/projects/week-2">Week 2</a></li>
+            <ul class="dropdown-menu" role="menu" id="projects-list" aria-labelledby="drop1">
             </ul>
           </li>
           <li><a href="/resources.html">Resources</a></li>
@@ -47,7 +45,7 @@
 
 <p>Like dancing or competitive eating, web development is not something you can just learn by sitting down and passively recieving information, there are never any clear "right" ways to do things, and you won't be expected to always have the right answer. You will be learning through <em>praxis</em>, where the theory and projects merge together. Most <a href="/resources.html">resources</a> we use come in one of three formats for your choosing depending on the type of learner you are. You will learn to search the web for answers, Google will be your friend.</p>
 
-<p>This course will be the beginning of your becoming a web developer, and will be structured as if you were just beginning to work for a small web shop. This syllabus and the associated course repository which contains the projects and schedule for the course, serves two functions: as a <strong>contract</strong> between the faculty (me!) and the student (you!) to ensure we are on the same page; and as the <strong>source code</strong> that actually defines how the course will work and run smoothly.</p>
+<p>This course will be the beginning of your becoming a web developer, and will be structured as if you were a fresh intern to work for a small web shop (except I won't ask you to get coffee). This syllabus and the associated course repository which contains the projects and schedule for the course, serves two functions: as a <strong>contract</strong> between the faculty (me!) and the student (you!) to ensure we are on the same page; and as the <strong>source code</strong> that actually defines how the course will work and run smoothly.</p>
 
 <h4>Syllabus as contract</h4>
 
@@ -67,6 +65,8 @@
 
 <p>You are expected to try hard on your projects, to give your solutions your own flair, and collaborate with your peers. As outlined in the projects section below, you will most likely fail (little "f," not big "F" as in the grade) several times in the course on projects. That's OK, and won't affect your final grade as long as you learn from your mistakes and keep going.</p>
 
+<p>"Web tools" not only include things that build the web, but also utilities that professionals in the field use to manage projects and work as a team. You will be expected after the first few weeks of class to turn in all projects using the <a href="http://git-scm.com/">Git version control system</a> on <a href="http://github.com">GitHub</a>. Each week is in the class repository, and students are expected to use the steps outlined in the "Projects" section below to turn in their work by Friday at midnight of every week, unless the project has an explicit multi-week timeline.</p>
+
 <h6>Plagiarism</h6>
 
 <p>This is a technical course, and while web development can be fun and expressive, what constitutes plagiarism in this course is different than others.</p>
@@ -85,17 +85,15 @@
 
 <h2>Projects &amp; grading</h2>
 
-<p>Projects (a.k.a. "homework") turned in via Git, picked up automatically every saturday night to see who turned in work on time. You get graded on effort if you turn it in on time, you can also take feedback to fix the errors.</p>
-
-<p>Web tools not only include things that build the web, but also tools that professionals in the field use to manage projects and work as a team. You will be expected after the first few weeks of class to turn in all projects using the <a href="http://git-scm.com/">Git version control system</a> on <a href="http://github.com">GitHub</a>. Each week is in the class repository, and students are expected to use the below steps to turn in projects by Friday night of every week, unless the project has an explicit multi-week timeline.</p>
+<p>Projects (a.k.a. "homework") will turned in via Git, and picked up automatically every Friday at midnight to see who turned in work on time. You get graded on effort if you turn it in on time, you can also take feedback to fix the errors. If for some reason you email me the work instead before midnight on Friday, that will be fine as long as you get it committed over the weekend to your repository.</p>
 
 <h4>Projects</h4>
 
-<p>Each week is structured around one or many small projects. Each project can be found in each week's folder under the course repository. <strong>Work in your own fork</strong> of the course repository, and remember to <strong>commit often</strong> so your work is safe and I can see your work.</p>
+<p>Each week is structured around one or many small projects. Each project can be found in each week's folder under the <code>projects</code> folder in the course repository. <strong>Work in your own fork</strong> of the course repository, and remember to <strong>commit often</strong> so your work is safe and I can see your process.</p>
 
-<p>To give you an idea of working with clients, each project will be delivered as a <em>narrative</em> with a (usually funny) client and a description of their audience and what the project is all about. As we progress through the course, you will see more exhaustive and real-world case studies provided by contacts in the industry. Names will be changed to protect the <strike>innocent</strike> guilty.</p>
+<p>To give you an idea of working with clients, each project will be delivered as a <em>narrative</em> with a (usually entertaining) client and a description of their audience and what the project is all about. As we progress through the course, you will see more exhaustive and real-world case studies provided by contacts in the industry. Names will be changed to protect the <strike>innocent</strike> guilty.</p>
 
-<p>Each project may have multiple folders inside it, but will always includ a <strong>README</strong> file which explains what you will be doing, including how the project will be graded. Here's an example folder:</p>
+<p>Each project may have multiple folders inside it, but will always includ a <strong>README</strong> file which explains what the fictitious client is expecting. Here's an example folder:</p>
 
 <pre><code>/projects/week1/  &lt;-- Each week's project can be found under the projects folder
   README.md       &lt;-- The readme file explains what's expected of you for that week
@@ -107,7 +105,7 @@
 
 <p>This course is structured around how small web deveopment shops work, which will be where most students will hopefully be working after they graduate. Web developers aren't expected to know everything on the top of their head, but instaed use a lot of notes, snippets, and Google searches to figure out difficult problems. Because of this, you won't be taking any tests, and instead will be given projects. Most of these will be week-long, some might take several weeks to complete.</p>
 
-<p>While it's important to turn work in on time for full credit, you won't be expected to have everything perfect. The grading of this course is base don the premise that <strong>you will not learn anything unless you make mistakes</strong>, and as such, many projects are set up to make you <strong>fail often and in spectacular ways</strong>. I will give you feedback on each project via comments on your commit, as well as opening issues in your queue if I think you need to rethink your approach.</p>
+<p>While it's important to turn work in on time for full credit, you won't be expected to have everything perfect. The grading of this course is based on the premise that <strong>you will not learn anything unless you make mistakes</strong>, and as such, many projects are set up to make you <strong>fail often and in spectacular ways</strong>. I will give you feedback on each project via comments on your commit, as well as opening issues in your queue if I think you need to rethink your approach.</p>
 
 <p>To turn in your work, just commit your project to your fork of the course repository. You should <strong>commit often</strong> while you do your work, as multiple commits will show me what you were thinking while you tackled the project, and prevent unnecessary questions. At the deadline, an automated script will run to download everyone's work and make a snapshot so I can see who was on time and hav ea copy of everything week-by-week. As long as your project is pushed to GitHub, it's considered turned in.</p>
 
@@ -125,9 +123,9 @@
 
 <h2>About me</h2>
 
-<p>Just two paragraphs here so you know I have some idea of what I'm talking about. I'm currently the web developer for CSUMB. Right, this CSUMB. I've been doing that with some success for about five years. Before I worked here, I was a baker, a farmer, and a somewhat professional artist. I am the maintainer of a ton of open source back-end and front-end libraries and projects, in <a href="drupal.org/user/125882">Drupal</a> and <a href="https://github.com/kevee">elsewhere</a>.</p>
+<p>Just two paragraphs here so you know I have some idea of what I'm talking about. I'm currently the web developer for CSUMB. I've been doing that for about five years. Before I worked here, I was a baker, a farmer, and a somewhat professional artist. I am the maintainer of a ton of open source back-end and front-end libraries and projects, in <a href="drupal.org/user/125882">Drupal</a> and <a href="https://github.com/kevee">elsewhere</a>.</p>
 
-<p>However, I've always been workin' the web since it was like, a thing. I worked summers from Junior High to High School writing printer command software for a legal software company. I built one of the first school district websites in the state of California in 1994, which ran on a dinky mac in a closet and we were excited when we got 10 visitors. Every once and a while we'd get a call that the website was down, and I would have to climb on the roof to fix the microwave antenna that connected us to the internet.</p>
+<p>However, I've always been on the web since the nacent days of BBSes and squealy modems. I worked summers from Junior High to High School writing printer command software for a legal software company. I built one of the first school district websites in the state of California in 1994, which ran on a dinky Mac in a closet and we were excited when we got 10 visitors. Every once and a while we'd get a call that the website was down, and I would have to climb on the roof to fix the microwave antenna that connected us to the internet.</p>
 
 		</div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>

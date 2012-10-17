@@ -8,15 +8,27 @@
     window.prettyPrint && prettyPrint();
     
     var now = new Date;
-    $('.week').each(function() {
-      if(!$('.this-week').length && Date.parse($(this).data('date')) <= now.getTime()) {
-        $(this).addClass('this-week')
-               .prepend('<a name="this-week"></a>')
-               .find('.title')
-               .append('<small>This week</small>');
-      }
+    $.getJSON('/course-website/schedule.json', function(data) {
+      $.each(data, function(date, week) {
+        console.log(week);
+        var $a = $('<a>');
+        var $li = $('<li>');
+        $a.attr('href', week.path)
+           .addClass(week.className)
+           .html(week.name);
+        $li.append($a);
+        $('#projects-list').append($li);
+        
+        if(Date.parse(date) <= now.getTime()) {
+          $('.week.' + week.className).prepend('<a name="this-week"></a>')
+                                 .find('.title')
+                                 .append('<small>This week</small>');
+          $('.' + week.className).addClass('this-week');
+        }
+      });
+      $('#projects-list .this-week').append('<i class="icon-star">');
     });
-    
+
     $('.resources a').each(function() {
       $(this).attr('target', '_blank');
     });

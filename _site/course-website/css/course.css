@@ -64,12 +64,12 @@
   font-size: 3em;
 }
 
-.this-week {
+.week.this-week {
   box-shadow: 0 0 15px rgba(250, 0, 0, 0.8);
   border-radius: 8px;
 }
 
-.this-week .title small {
+.week.this-week .title small {
   margin-left: 25px;
 }
 

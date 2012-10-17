@@ -38,15 +38,15 @@ layout: default
       <strong>Watch out!</strong> The schedule might change during the course. Subscribe to the <a href="#announcements">announcements</a> to be notified of any corrections.
     </div>
     
-    <div class="row week" data-date="2013-01-22">
+    <div class="row week week-1">
       <div class="span1 week-number">
         <h3><span class="element-invisible">week</span> 1</h3>
       </div>
       <div class="span8">
         <h4 class="title">Introduction: What's the web?</h4>
         <p>We'll cover the sundry administrative requirements of the course, including the syllabus and expectations. We then launch into the history of the web, how the web actually works, and set everyone up with the necessary tools to start the course.</p>
-        <aside class="breadcrumb">
-          <strong>Inspiration for the week: </strong> 
+        <aside class="alert alert-info">
+          <strong>Inspiration for the week: </strong> <a href="http://www.chromeexperiments.com/">Google Chrome Experiments</a>
         </aside>
         <h5>Lecture</h5>
         <ul>
@@ -62,14 +62,14 @@ layout: default
         </ul>
       </div>
     </div>
-    <div class="row week" data-date="2013-01-28">
+    <div class="row week week-2">
       <div class="span1 week-number">
         <h3><span class="element-invisible">week</span> 2</h3>
       </div>
       <div class="span8">
         <h4 class="title">HTML: The basics</h4>
         <p>In the beginning, Sir Tim Berners-Lee crated HTML. And it was good. Today we use lots of fancy technologies to power the web, but in the end we're just creating HTML markup for browsers to display. This week will cover the basics of HTML and DOM theory.</p>
-        <aside class="breadcrumb">
+        <aside class="alert alert-info">
           <strong>Inspiration for the week: </strong> <a href="http://browserquest.mozilla.org/">BrowserQuest</a>
         </aside>
         <h5>Lecture</h5>
@@ -85,15 +85,15 @@ layout: default
         </ul>
       </div>
     </div>
-    <div class="row week" data-date="2013-02-04">
+    <div class="row week week-3">
       <div class="span1 week-number">
         <h3><span class="element-invisible">week</span> 3</h3>
       </div>
       <div class="span8">
         <h4 class="title">HTML: HTML5 and the future</h4>
         <p>I have seen the future, and it is the browser.</p>
-        <aside class="breadcrumb">
-          <strong>Inspiration for the week: </strong> 
+        <aside class="alert alert-info">
+          <strong>Inspiration for the week: </strong> <a href="http://thewildernessdowntown.com/">The wilderness downtown</a>
         </aside>
         <h5>Lecture</h5>
         <ul>
@@ -121,7 +121,7 @@ layout: default
       </ul>
     {% endif %}
     {% if !site.posts %}
-      <div class="alert alert-info">
+      <div class="alert alert-error">
         <strong>No announcements yet!</strong> Check back for announcements later in the course.
       </div>
     {% endif %}
