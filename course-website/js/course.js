@@ -10,7 +10,6 @@
     var now = new Date;
     $.getJSON('/course-website/schedule.json', function(data) {
       $.each(data, function(date, week) {
-        console.log(week);
         var $a = $('<a>');
         var $li = $('<li>');
         $a.attr('href', week.path)
