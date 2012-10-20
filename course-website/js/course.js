@@ -8,26 +8,39 @@
     window.prettyPrint && prettyPrint();
     
     var now = new Date;
-    $.getJSON('/course-website/schedule.json', function(data) {
-      $.each(data, function(date, week) {
-        var $a = $('<a>');
-        var $li = $('<li>');
-        $a.attr('href', week.path)
-           .addClass(week.className)
-           .html(week.name);
-        $li.append($a);
-        $('#projects-list').append($li);
+    var pastWeeks = [];
+    $('.week').each(function() {
+      if(Date.parse($(this).find('time:first').attr('datetime')) <= now.getTime()) {
+        pastWeeks.push($(this));
+      }
+    })
+    if(pastWeeks.length) {
+      pastWeeks.pop().addClass('this-week')
+                     .prepend('<a name="this-week"></a>')
+                     .find('.title')
+                     .append('<small>This week</small>');
         
-        if(Date.parse(date) <= now.getTime()) {
-          $('.week.' + week.className).prepend('<a name="this-week"></a>')
-                                 .find('.title')
-                                 .append('<small>This week</small>');
-          $('.' + week.className).addClass('this-week');
-        }
-      });
-      $('#projects-list .this-week').append('<i class="icon-star">');
+    }
+    $('#hide-past-weeks').click(function() {
+      if($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $('.week:not(.this-week)').each(function() {
+          if(Date.parse($(this).find('time:first').attr('datetime')) < now.getTime()) {
+            $(this).show();
+          }
+        });
+      }
+      else {
+        $(this).addClass('active');
+        $('.week:not(.this-week)').each(function() {
+          if(Date.parse($(this).find('time:first').attr('datetime')) < now.getTime()) {
+            $(this).hide();
+          }
+        });
+      }
+      return false;
     });
-
+    
     $('.resources a').each(function() {
       $(this).attr('target', '_blank');
     });

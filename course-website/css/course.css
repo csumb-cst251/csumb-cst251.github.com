@@ -1,3 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,900);
+
+.cst-251 h1, .cst-251 h2, .cst-251 h3, .cst-251 h4 {
+  font-family: 'Source Code Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
 /* Code examples
 -------------------------------------------------- */
 
@@ -48,25 +54,45 @@
   display: block;
 }
 
+/* Navbar
+-------------------------------------------------- */
+body.cst-251 {
+  padding-top: 50px;
+}
+
+.cst-251 .navbar .nav > li > a { }
+
+.cst-251 h1 {
+  color: #b94a48;
+}
+
+.cst-251 .page-header {
+  border-bottom-color: rgb(211, 185, 104);
+}
 /* Schedule
 -------------------------------------------------- */
 .week .week-number {
   text-align: center;
 }
 
-.week .week-number + div {
+/*.week .week-number + div {
   border-left: 2px solid #ccc;
   margin-left: 0;
   padding-left: 18px;
-}
+}*/
 
 .week .week-number h3 {
   font-size: 3em;
 }
 
-.week.this-week {
-  box-shadow: 0 0 15px rgba(250, 0, 0, 0.8);
+.week.this-week .week-number h3 {
+  background: #b94a48;
+  color: white;
   border-radius: 8px;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  line-height: 65px;
 }
 
 .week.this-week .title small {
