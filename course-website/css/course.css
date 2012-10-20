@@ -75,6 +75,24 @@ body.cst-251 {
   text-align: center;
 }
 
+.week.half-week .title {}
+
+
+.week-number time {
+  color: #ccc;
+  font-style: italic; 
+}
+
+.week .day {
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.week .day h5 time{
+  color: #b94a48;
+  font-size: 140px;
+}
+
 /*.week .week-number + div {
   border-left: 2px solid #ccc;
   margin-left: 0;

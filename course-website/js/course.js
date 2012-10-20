@@ -6,11 +6,10 @@
 
     // make code pretty
     window.prettyPrint && prettyPrint();
-    
     var now = new Date;
     var pastWeeks = [];
     $('.week').each(function() {
-      if(Date.parse($(this).find('time:first').attr('datetime')) <= now.getTime()) {
+      if(Date.parse($(this).find('.week-number time:first').attr('datetime')) <= now.getTime()) {
         pastWeeks.push($(this));
       }
     })
