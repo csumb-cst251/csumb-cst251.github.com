@@ -25,6 +25,19 @@
       </div>
     </div>
 		<div class="container">
+		  <ul class="breadcrumb">
+    
+      {% assign b = " " %}
+      {% capture b %}{{site.base_dir}}{% endcapture %}
+      <li><a href="{{site.base_dir}}/">Home</a> <span class="divider">/</span></li>
+      {% for b in page.breadcrumbs %}
+        <li><a href="{{b.href}}">{{b.title}}</a> <span class="divider">/</span></li>
+      {%endfor%}
+      <li class="active">{{ page.title }}</li>
+      </ul>
+		</div>
+		<div class="container">
+		
 			{{ content }}
 		</div>
   <script src="/course-website/js/jquery.js"></script>

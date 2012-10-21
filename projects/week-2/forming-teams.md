@@ -8,12 +8,12 @@ Building your team
 
 For the rest of the course, you will be assigned to teams of five to six people, and each team will represent a real company that designs and develops websites for clients. During lab, work with your new team to do some research on your assigned company. Visit their website. Check out their profile pages and imagine your face in there amongst the nerds and artists that build the web. Look up their portfolios
 
-- [Chapter Three]()
-- [Lullabot]()
-- [Acquia]()
-- [Aten Design Group]()
-- [Gorten Studios]()
-- []()
+- [Chapter Three](http://www.chapterthree.com/)
+- [Lullabot](http://lullabot.com)
+- [Acquia](http://acquia.com)
+- [Four Kitchens](http://fourkitchens.com/)
+- [Palantir](http://www.palantir.net/)
+- [Metal Toad Media](http://www.metaltoad.com/)
 
 Assignment
 ----------

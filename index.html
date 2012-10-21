@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<a href="https://github.com/csumb-cst251/csumb-cst251.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+<a href="https://github.com/csumb-cst251/csumb-cst251.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;z-index: 5000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
 <div class="row">
   <div class="span3 sidebar">
@@ -48,8 +48,10 @@ layout: default
     </div>
     <div class="row week week-1 half-week">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 1</h3>
         <time datetime="2013-01-22">January 22</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Introduction: What's the web?</h4>
@@ -57,28 +59,48 @@ layout: default
         <aside class="alert alert-info">
           <strong>Inspiration for the week: </strong> <a href="http://www.chromeexperiments.com/">Google Chrome Experiments</a>
         </aside>
+        <div class="readings">
+          <h4>Readings</h4>
+          <ul class="resources">
+            <li class="read">
+              <strong><a href="http://www.20thingsilearned.com/">20 Things I Learned about Browsers &amp; the Web</a></strong> - A beautifully put together online book that covers the web and other internet-y things. Also note all those fancy page turning animations are pure HTML5 goodness to boot.
+            </li>
+          </ul>
+        </div>
         <div class="day">
           <h5><time datetime="2013-01-23">Day one</time></h5>
           <h6>Lecture</h6>
-          <p class="day-links"><a href="/course/week-1/lecture/day-1/outline.html">Outline</a> | <a href="/course/week-1/lab/day-1/presentation.html">Presentation</a></p>
+          <ul class="day-links">
+            <li>
+            <a target="_blank" href="/course/week-1/lecture/day-1/outline.html" class="label label-success">
+              Outline
+            </a>
+            </li>
+            <li>
+            <a target="_blank" href="/course/week-1/lecture/day-1/presentation.html"  class="label label-info">
+              Presentation
+            </a>
+            </li>
+          </ul>
           <ul>
             <li>Introduction to the course.</li>
             <li>Discovering the industry of web development and design.</li>
-            <li>How the web works and browser internals.</li>
+            <li>How the web works.</li>
           </ul>
           <h6>Lab</h6>
           <ul>
-            <li>Introduction to Git.</li>
-            <li>Installing and setting up Git.</li>
-            <li>Forking course repository, making commits.</li>
+            <li>Completing course survey.</li>
+            <li>Quick introduction to Git.</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="row week week-2">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 2</h3>
         <time datetime="2013-01-28">January 28</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">HTML: The basics</h4>
@@ -86,24 +108,86 @@ layout: default
         <aside class="alert alert-info">
           <strong>Inspiration for the week: </strong> <a href="http://browserquest.mozilla.org/">BrowserQuest</a>
         </aside>
-        <h5>Lecture</h5>
-        <ul>
-          <li>XML, HTML, and structured markup.</li>
-          <li>The family tree: ancestors, children, siblings.</li>
-          <li>Available tags and common attributes.</li>
+        <div class="readings">
+          <h4>Readings</h4>
+          <ul class="resources">
+          <li class="read">
+            <strong><a href="http://git-scm.com/book">Pro Git</a></strong> - You only need to read Chapters 1 &amp; 2.
+          </li>
+          <li class="watch">
+            <strong><a href="http://git-scm.com/videos">Pro Git Videos</a></strong> - View all four videos.
+          </li>
+          <li class="practice">
+            <strong><a href="http://try.github.com/levels/1/challenges/1">Git challenges</a></strong> - Become a Git rockstar with interactive terminal training from GitHub. You only need to get half-way through this training.
+          </li>
         </ul>
-        <h5>Lab</h5>
-        <ul>
-          <li><a href="/course/week-2/lab/day-1/teams.html">Building your teams</a></li>
-          <li>Building a web page.</li>
-          <li>Using the browser's HTML inspector.</li>
-        </ul>
+        </div>
+        <div class="projects">
+          <h4>Projects</h4>
+          <ul>
+            <li><strong><a href="/projects/week-2/forming-teams.html">Form your teams</a></strong> - Work together to complete an overview of your team and your team's company.</li>
+            
+          </ul>
+        </div>
+        <div class="day">
+          <h5><time datetime="2013-01-28">Day one</time></h5>
+          <h6>Lecture</h6>
+          <ul class="day-links">
+            <li>
+            <a target="_blank" href="/course/week-2/lecture/day-1/outline.html" class="label label-success">
+              Outline
+            </a>
+            </li>
+            <li>
+            <a target="_blank" href="/course/week-2/lecture/day-1/presentation.html"  class="label label-info">
+              Presentation
+            </a>
+            </li>
+          </ul>
+          <ul>
+            <li>Overview of HTML - tags &amp; attributes.</li>
+            <li>The family tree: nested HTML tags</li>
+          </ul>
+          <h6>Lab</h6>
+          <ul>
+            <li>cHeTmMeLe - HTML card game.</li>
+          </ul>
+        </div>
+        <div class="day">
+          <h5><time datetime="2013-01-30">Day two</time></h5>
+          <h6>Lecture</h6>
+          <ul class="day-links">
+            <li>
+            <a target="_blank" href="/course/week-2/lecture/day-2/outline.html" class="label label-success">
+              Outline
+            </a>
+            </li>
+            <li>
+            <a target="_blank" href="/course/week-2/lecture/day-2/presentation.html"  class="label label-info">
+              Presentation
+            </a>
+            </li>
+          </ul>
+          <ul>
+            <li></li>
+          </ul>
+          <h6>Lab</h6>
+          <ul>
+            <li>Introduction to Git.</li>
+            <li>Installing and setting up Git.</li>
+            <li>Forking course repository, making commits.</li>
+            <li>Initiating pull requests.</li>
+            <li>Break into teams.</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="row week week-3">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 3</h3>
         <time datetime="2013-02-04">February 4</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">HTML: HTML5 and the future</h4>
@@ -126,8 +210,10 @@ layout: default
     </div>
     <div class="row week week-4">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 4</h3>
         <time datetime="2013-02-11">February 11</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet</h4>
@@ -136,8 +222,10 @@ layout: default
     </div>
     <div class="row week week-5">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 5</h3>
         <time datetime="2013-02-18">February 18</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet</h4>
@@ -146,8 +234,10 @@ layout: default
     </div>
     <div class="row week week-6">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 6</h3>
         <time datetime="2013-02-25">February 25</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet</h4>
@@ -156,8 +246,10 @@ layout: default
     </div>
     <div class="row week week-7">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 7</h3>
         <time datetime="2013-03-04">March 4</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet</h4>
@@ -166,8 +258,10 @@ layout: default
     </div>
     <div class="row week week-8">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 8</h3>
         <time datetime="2013-03-11">March 11</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet</h4>
@@ -176,8 +270,10 @@ layout: default
     </div>
     <div class="row week week-9 inactive">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 9</h3>
         <time datetime="2013-03-18">March 18</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Spring break</h4>
@@ -188,8 +284,10 @@ layout: default
     </div>
     <div class="row week week-10">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 10</h3>
         <time datetime="2013-03-25">March 25</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">TWIG: Templating language for Drupal &amp; beyond</h4>
@@ -198,8 +296,10 @@ layout: default
     </div>
     <div class="row week week-11 half-week">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 11</h3>
         <time datetime="2013-04-01">April 1</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet (need april fool's joke in here)</h4>
@@ -208,8 +308,10 @@ layout: default
     </div>
     <div class="row week week-12">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 12</h3>
         <time datetime="2013-04-08">April 8</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet</h4>
@@ -218,8 +320,10 @@ layout: default
     </div>
     <div class="row week week-13">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 13</h3>
         <time datetime="2013-04-15">April 15</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet</h4>
@@ -228,8 +332,10 @@ layout: default
     </div>
     <div class="row week week-14">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 14</h3>
         <time datetime="2013-04-22">April 22</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet</h4>
@@ -237,8 +343,10 @@ layout: default
       </div>
     </div><div class="row week week-15">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
         <h3><span class="element-invisible">week</span> 15</h3>
         <time datetime="2013-04-29">April 29</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet</h4>
@@ -247,8 +355,11 @@ layout: default
     </div>
     <div class="row week week-16">
       <div class="span1 week-number">
+        <div class="week-number-wrapper">
+        
         <h3><span class="element-invisible">week</span> 16</h3>
         <time datetime="2013-05-06">May 6</time>
+        </div>
       </div>
       <div class="span8">
         <h4 class="title">Not done yet</h4>
@@ -284,28 +395,7 @@ layout: default
         <button class="btn active" data-enable=".practice"><i class="icon-wrench"></i> Practice</button>
       </div>
     </div>
-    <a name="required"></a>
-    <h2>Required</h2>
-    <h3>The internet</h3>
-    <p>Let's do a refresher on how the internet, and ultimately the Web, works</p>
-    <ul class="resources">
-      <li class="read">
-        <strong><a href="http://www.20thingsilearned.com/">20 Things I Learned about Browsers &amp; the Web</a></strong> - A beautifully put together online book that covers the web and other internet-y things. Also note all those fancy page turning animations are pure HTML5 goodness to boot.
-      </li>
-    </ul>
-    <h3>Introduction to Git &amp; Version Control</h3>
-    <ul class="resources">
-      <li class="read">
-        <strong><a href="http://git-scm.com/book">Pro Git</a></strong> - You only need to read Chapters 1 &amp; 2.
-      </li>
-      <li class="watch">
-        <strong><a href="http://git-scm.com/videos">Pro Git Videos</a></strong> - View all four videos.
-      </li>
-      <li class="practice">
-        <strong><a href="http://try.github.com/levels/1/challenges/1">Git challenges</a></strong> - Become a Git rockstar with interactive terminal training from GitHub. You only need to get half-way through this training.
-      </li>
-    </ul>
-    
+
     <a name="suggested"></a>
     <h2>Suggested</h2>
     <ul>

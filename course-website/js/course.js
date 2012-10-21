@@ -6,6 +6,31 @@
 
     // make code pretty
     window.prettyPrint && prettyPrint();
+    
+    $(document).scroll(function() {
+			var viewHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+			var vOffset = (document.documentElement.scrollTop || document.body.scrollTop);
+			var $active = $('.active-wrapper');
+			if($active.length) {
+			  var $activeParent = $active.parents('.week').first();
+  			var activePosition = $active.position();
+  			if( activePosition.top + $active.height() + 40 >= $activeParent.position().top + $activeParent.height() ||
+  			    activePosition.top >= $activeParent.position().top) {
+    			$active.removeClass('active-wrapper');
+  			}
+			}
+			$('.week-number-wrapper').each(function() {
+  		  var position = $(this).offset();
+  		  var $parent = $(this).parents('.week').first();
+  		  var parentPosition = $parent.position();
+  		  if( !$('.active-wrapper').length && position.top < vOffset + 40 && 
+  		      parentPosition.top < vOffset + 40 && 
+  		      parentPosition.top + $parent.height() > vOffset + 40 +$(this).height()) {
+    		  $(this).addClass('active-wrapper');
+  		  }
+			});
+		});
+    
     var now = new Date;
     var pastWeeks = [];
     $('.week').each(function() {

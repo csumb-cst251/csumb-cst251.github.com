@@ -75,6 +75,10 @@ body.cst-251 {
   text-align: center;
 }
 
+.week {
+  border-bottom: 2px solid #ddd;
+}
+
 .week.half-week .title {}
 
 
@@ -84,13 +88,37 @@ body.cst-251 {
 }
 
 .week .day {
-  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #ddd;
   margin-bottom: 15px;
 }
 
-.week .day h5 time{
+.week-number {
+  position: relative;
+}
+
+.week-number-wrapper.active-wrapper {
+  position: fixed;
+  top: 40px;
+}
+
+.week .day h5 time, .week .readings h4, .projects h4 {
   color: #b94a48;
-  font-size: 140px;
+  font-size: 150%;
+  font-family: 'Source Code Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.week .day h6 {
+  font-size: 130%;
+}
+
+.day-links {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.day-links li {
+  display: inline;
+  margin-right: 15px;
 }
 
 /*.week .week-number + div {
@@ -186,7 +214,7 @@ padding-top: 15px;
   opacity: 1;
 }
 .cst-nav-list.affix {
-  top: 40px;
+  top: 80px;
 }
 .cst-nav-list.affix-bottom {
   position: absolute;
