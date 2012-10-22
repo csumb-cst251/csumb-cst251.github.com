@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Your assigned team
+breadcrumbs: [{href : '/projects', title : 'Projects' }, {href : '/#week-2', title : 'Week 2'}]
 ---
 
 Building your team

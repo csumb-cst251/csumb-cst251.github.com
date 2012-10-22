@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Week 1 lecture
-breadcrumbs: [{href : '/#test', title : 'Week 1'}, {href : '/#test', title : 'Lecture'}]
+breadcrumbs: [{href : '/#week-1', title : 'Week 1'}, {href : '/#week-1-day-1', title : 'Day 1'}]
 ---
 
 Outline of lecture 1
