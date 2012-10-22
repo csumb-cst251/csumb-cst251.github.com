@@ -15,7 +15,7 @@
 			  var $activeParent = $active.parents('.week').first();
   			var activePosition = $active.position();
   			if( activePosition.top + $active.height() + 40 >= $activeParent.position().top + $activeParent.height() ||
-  			    activePosition.top >= $activeParent.position().top) {
+  			    activePosition.top <= $activeParent.position().top) {
     			$active.removeClass('active-wrapper');
   			}
 			}
