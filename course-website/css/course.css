@@ -4,6 +4,12 @@
   font-family: 'Source Code Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+#appointment-hours {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+
 /* Code examples
 -------------------------------------------------- */
 
