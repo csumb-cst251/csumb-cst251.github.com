@@ -2,6 +2,11 @@
 
 .cst-251 h1, .cst-251 h2, .cst-251 h3, .cst-251 h4 {
   font-family: 'Source Code Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.cst-251 h1 {
+  font-weight: bold;
 }
 
 #appointment-hours {
