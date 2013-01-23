@@ -1,40 +1,31 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
 	<title>{{ page.title }}</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=1274, user-scalable=no">
-	<link rel="stylesheet" href="/course-website/presentation/themes/ribbon/styles/style.css"/>
-	<link rel="stylesheet" href="/course-website/prettify/prettify.css"/>
-	<!--
-		To apply styles to the certain slides
-		use slide ID to get needed elements
-		-->
-	<style>
-		#Cover h2 {
-			color:#FFF;
-			text-align:center;
-			font-size:70px;
-			}
-		#FitToWidth h2,
-		#FitToHeight h2 {
-			color:#FFF;
-			text-align:center;
-			}
-		.cover.w .inverse {
-  		color: #fff;
-		}
-		
-		pre.prettyprint {
-  		border-radius: 8px;
-		}
-		
-	</style>
-</head>
-<body class="list">
-	<header class="caption">
-		<h1>{{ page.title }}</h1>
-	</header>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="../../../common/reveal.js/css/reveal/css/reveal.min.css">
+		<link rel="stylesheet" href="../../../common/reveal.js/js/reveal/css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="../../../common/reveal.js/js/reveal/lib/css/zenburn.css">
+		<style>
+		  p.more {
+  		  
+		  }
+		</style>
+		<script>
+			document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+<body>
 	{{ content }}
 	<div class="progress"><div></div></div>
 	
