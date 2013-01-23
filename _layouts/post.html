@@ -1,6 +1,33 @@
----
-layout: default
----
-<div id="post">
-{{ content }}
-</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CST 251 | {{ page.title }}</title>
+		<link rel="stylesheet" href="/course-website/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="/course-website/prettify/prettify.css"/>
+		<link rel="stylesheet" href="/course-website/css/course.css"/>
+
+	</head>
+	<body data-spy="scroll" data-target=".cst-nav-list" class="cst-251">
+		<div class="container">
+		  <ul class="breadcrumb">
+    
+      {% assign b = " " %}
+      {% capture b %}{{site.base_dir}}{% endcapture %}
+      <li><a href="{{site.base_dir}}/">Home</a> <span class="divider">/</span></li>
+      {% for b in page.breadcrumbs %}
+        <li><a href="{{b.href}}">{{b.title}}</a> <span class="divider">/</span></li>
+      {%endfor%}
+      <li class="active">{{ page.title }}</li>
+      </ul>
+		</div>
+		<div class="container">
+		<h1>{{ page.title }}</h1>
+			{{ content }}
+		</div>
+  <script src="/course-website/js/jquery.js"></script>
+  <script src="/course-website/prettify/prettify.js"></script>
+  <script src="/course-website/js/course.js"></script>
+  <script src="/course-website/bootstrap/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
