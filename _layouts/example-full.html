@@ -7,7 +7,7 @@
 
 	</head>
 	<body class="example">
-		<div id="full-editor">{{ content | escape }}</div>
+		<div id="full-editor" class="editor">{{ content | escape }}</div>
   <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script>
@@ -19,10 +19,11 @@
       });
       $(window).trigger('resize');
       
-      var editor = ace.edit("editor");
+      var editor = ace.edit("full-editor");
       editor.setTheme("ace/theme/merbivore");
       editor.getSession().setMode("ace/mode/html");
       editor.setBehavioursEnabled(false);
+
     });
   })(jQuery);
   </script>

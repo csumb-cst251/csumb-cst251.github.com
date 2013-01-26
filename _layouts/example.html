@@ -7,7 +7,7 @@
 
 	</head>
 	<body class="example">
-		<div id="editor">{{ content | escape }}</div>
+		<div id="editor" class="editor">{{ content | escape }}</div>
 		<div id="preview">
 		  <div class="content">
 		  
@@ -30,7 +30,7 @@
       editor.setTheme("ace/theme/merbivore");
       editor.getSession().setMode("ace/mode/html");
       editor.setBehavioursEnabled(false);
-      editor.getSession().setUseWrapMode(true);
+      
       $('#preview .content').html(editor.getValue());
       editor.getSession().on('change', function(e) {
         $('#preview .content').html(editor.getValue());
