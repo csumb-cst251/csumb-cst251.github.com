@@ -4,9 +4,14 @@ layout: default
 <a href="https://github.com/csumb-cst251/csumb-cst251.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;z-index: 5000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
 
-<h2>Class</h2>
+<h2>CST 251 Spring 2013</h2>
+<p class="lead">
+  These are examples and notes from lectures.
+</p>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% if post.category == "week" %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
