@@ -29,7 +29,7 @@
 			  <div class="span3">
 			   <h2>Examples</h2>
 			   <ul class="posts nav nav-tabs nav-stacked">
-            {% for post in site.posts %}
+            {% for post in site.posts order:descending %}
               {% if post.day == page.day and post.category != page.category %}
                 <li><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></li>
               {% endif %}
