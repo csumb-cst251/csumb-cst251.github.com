@@ -1,6 +1,7 @@
 .editor {
   position: absolute;
   width: 100%;
+  font-size: 300%;
 }
 
 #preview {
