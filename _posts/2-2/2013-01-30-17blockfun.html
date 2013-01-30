@@ -47,7 +47,7 @@ title: Block fun!!
         $('#preview .content').html(editor.getValue());
         $('#preview .content *').each(function() {
           if($(this).css('display') == 'block') { $(this).addClass('block'); }
-          if($(this).css('inline') == 'inline') { $(this).addClass('inline'); }
+          if($(this).css('display') == 'inline') { $(this).addClass('inline'); }
         });
       });
     });
