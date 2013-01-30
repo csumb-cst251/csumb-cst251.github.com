@@ -1,0 +1,56 @@
+---
+day: 2-2
+---
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>CST 251 | {{ page.title }}</title>
+		<link rel="stylesheet" href="/course-website/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="/common/course.css"/>
+    <style>
+    #preview .block { border: 2px solid red; }
+    #preview .inline { border: 2px solid blue; }
+    </style>
+	</head>
+	<body class="example">
+		<div id="editor" class="editor">Type stuff in here!</div>
+		<div id="preview">
+		  <div class="content">
+		  
+		  </div>
+		</div>
+		</div>
+  <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script>
+  (function($) {
+  
+    $(document).ready(function() {
+      $(window).on('resize', function() {
+        $('#editor, #preview').css('height', $(window).height() / 2 + 'px');
+        $('#preview').css('padding-top', (($(window).height() / 2) + 10) + 'px');
+      });
+      $(window).trigger('resize');
+      
+      var editor = ace.edit("editor");
+      var session = editor.getSession();
+      editor.setTheme("ace/theme/tomorrow");
+      session.setMode("ace/mode/html");
+      editor.setBehavioursEnabled(false);
+      editor.renderer.setShowPrintMargin(false);
+      session.setUseWrapMode(true);
+      session.setWrapLimitRange(null, null);
+      editor.renderer.setPrintMarginColumn(80);
+      $('#preview .content').html(editor.getValue());
+      editor.getSession().on('change', function(e) {
+        $('#preview .content').html(editor.getValue());
+        $('#preview .content *').each(function() {
+          if($(this).css('display') == 'block') { $(this).addClass('block'); }
+          if($(this).css('inline') == 'block') { $(this).addClass('inline'); }
+        });
+      });
+    });
+  })(jQuery);
+  </script>
+	</body>
+</html>
