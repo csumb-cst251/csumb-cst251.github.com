@@ -11,7 +11,8 @@ date: 1970-01-09
 	<style>
 	#preview .block { border: 2px solid red; background: #feb8b2; }
 	#preview .inline { border: 2px solid blue; background: #84b7da; }
-	</head>
+	</style>
+</head>
 	<body class="example">
 		<div id="editor" class="editor">{{ content | escape }}</div>
 		<div id="preview">
@@ -44,7 +45,7 @@ date: 1970-01-09
       $('#preview .content').html(editor.getValue());
       editor.getSession().on('change', function(e) {
         $('#preview .content').html(editor.getValue());
-      	$('#preview *').each(function() {
+      	$('#preview .content *').each(function() {
 	  if($(this).css('display') == 'block') {
 	    $(this).addClass('block');
 	  }
