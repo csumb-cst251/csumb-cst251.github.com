@@ -1,10 +1,11 @@
 ---
 day: 2-2
+title: Block fun!!
 ---
 <!DOCTYPE html>
 <html>
   <head>
-		<title>CST 251 | {{ page.title }}</title>
+		<title>CST 251 | Block fun!</title>
 		<link rel="stylesheet" href="/course-website/bootstrap/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="/common/course.css"/>
     <style>
@@ -46,7 +47,7 @@ day: 2-2
         $('#preview .content').html(editor.getValue());
         $('#preview .content *').each(function() {
           if($(this).css('display') == 'block') { $(this).addClass('block'); }
-          if($(this).css('inline') == 'block') { $(this).addClass('inline'); }
+          if($(this).css('inline') == 'inline') { $(this).addClass('inline'); }
         });
       });
     });
