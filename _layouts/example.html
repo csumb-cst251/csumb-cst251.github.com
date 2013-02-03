@@ -8,6 +8,14 @@
 	</head>
 	<body class="example">
 		<div id="editor" class="editor">{{ content | escape }}</div>
+		<div class="dropdown" id="settings">
+      <a class="btn dropdown-toggle" data-toggle="dropdown" >
+        <i class="icon-wrench"></i>
+      </a>
+      <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+        <li><a tabindex="-1" href="#switch" id="switch-theme">Make dark</a></li>
+      </ul>
+    </div>
 		<div id="preview">
 		  <div class="content">
 		  
@@ -16,13 +24,16 @@
 		</div>
   <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="/course-website/bootstrap/js/bootstrap.min.js"></script>
   <script>
   (function($) {
   
     $(document).ready(function() {
+      
       $(window).on('resize', function() {
         $('#editor, #preview').css('height', $(window).height() / 2 + 'px');
         $('#preview').css('padding-top', (($(window).height() / 2) + 10) + 'px');
+        $('#settings').css('top', (($(window).height() / 2)+ 10)  + 'px');
       });
       $(window).trigger('resize');
       
@@ -38,6 +49,17 @@
       $('#preview .content').html(editor.getValue());
       editor.getSession().on('change', function(e) {
         $('#preview .content').html(editor.getValue());
+      });
+      
+      $('#switch-theme').click(function() {
+        if(editor.getTheme() == 'ace/theme/tomorrow') {
+          editor.setTheme('ace/theme/merbivore');
+          $(this).html('Make light');
+        }
+        else {
+          editor.setTheme('ace/theme/tomorrow');
+          $(this).html('Make dark');
+        }
       });
     });
   })(jQuery);
