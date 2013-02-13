@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CST 251 | {{ page.title }}</title>
+		<link rel="stylesheet" href="/course-website/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="/common/course.css"/>
+
+	</head>
+	<body class="example">
+		<div id="editor-html" class="editor half">{{ content | escape }}</div>
+		<div id="editor-css" class="editor half">{{ page.css }}</div>
+		<div class="dropdown" id="settings">
+      <a href="csspirate{{ page.nextthing }}.html" class="btn btn-primary">Next adventure!</a>
+    </div>
+		<div id="preview">
+
+		  <style></style>
+		  <div class="content">
+		  
+		  </div>
+		</div>
+		</div>
+  <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="/course-website/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/course-website/blob.min.js"></script>
+  <script src="/course-website/filesaver.min.js"></script>
+  <script>
+  (function($) {
+  
+    $(document).ready(function() {
+      
+      $(window).on('resize', function() {
+        $('.editor, #preview').css('height', $(window).height() / 2 + 'px');
+        $('#preview').css('padding-top', (($(window).height() / 2) + 10) + 'px');
+        $('#settings').css('top', (($(window).height() / 2)+ 10)  + 'px');
+        $('#editor-css').css('margin-left', ($(window).width() / 2) + 'px');
+      });
+      $(window).trigger('resize');
+      
+      var htmleditor = ace.edit("editor-html");
+      var session = htmleditor.getSession();
+      htmleditor.setTheme("ace/theme/tomorrow");
+      session.setMode("ace/mode/html");
+      htmleditor.setBehavioursEnabled(false);
+      htmleditor.renderer.setShowPrintMargin(false);
+      session.setUseWrapMode(true);
+      session.setWrapLimitRange(null, null);
+      htmleditor.renderer.setPrintMarginColumn(80);
+      $('#preview .content').html(htmleditor.getValue());
+      htmleditor.getSession().on('change', function(e) {
+        $('#preview .content').html(htmleditor.getValue());
+      });
+      
+      var csseditor = ace.edit("editor-css");
+      var session = csseditor.getSession();
+      csseditor.setTheme("ace/theme/tomorrow");
+      session.setMode("ace/mode/html");
+      csseditor.setBehavioursEnabled(false);
+      csseditor.renderer.setShowPrintMargin(false);
+      session.setUseWrapMode(true);
+      session.setWrapLimitRange(null, null);
+      csseditor.renderer.setPrintMarginColumn(80);
+      $('#preview style').first().html(csseditor.getValue());
+      csseditor.getSession().on('change', function(e) {
+        $('#preview style').first().html(csseditor.getValue());
+      });
+      
+      $('#switch-theme').click(function() {
+        if(htmleditor.getTheme() == 'ace/theme/tomorrow') {
+          htmleditor.setTheme('ace/theme/merbivore');
+          csseditor.setTheme('ace/theme/merbivore');
+          $(this).html('Make light');
+        }
+        else {
+          htmleditor.setTheme('ace/theme/tomorrow');
+          csseditor.setTheme('ace/theme/tomorrow');
+          $(this).html('Make dark');
+        }
+      });
+      $('#download-html').click(function() {
+        var builder = new BlobBuilder();
+        builder.append(htmleditor.getValue());
+        var blob = builder.getBlob("text/plain");
+        saveAs(blob, "page.html");
+      });
+      
+      $('#download-css').click(function() {
+        var builder = new BlobBuilder();
+        builder.append(csseditor.getValue());
+        var blob = builder.getBlob("text/plain");
+        saveAs(blob, "style.css");
+      });
+    });
+  })(jQuery);
+  </script>
+	</body>
+</html>
