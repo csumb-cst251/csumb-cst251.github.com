@@ -3,7 +3,11 @@
 	<head>
 		<title>CST 251 | {{ page.title }}</title>
 		<link rel="stylesheet" href="/common/course.css"/>
-
+		{% if page.nobootstrap %}
+  	
+  	{% else %}
+  		<link rel="stylesheet" href="/course-website/bootstrap/css/bootstrap.min.css"/>
+		{% endif %}
 	</head>
 	<body class="example">
 		<div id="editor-html" class="editor half">{{ content | escape }}</div>
