@@ -1,0 +1,99 @@
+---
+layout: example-css-only
+title: Coloring activity
+day : 5-1
+css : |
+  .sky {
+    
+  }
+---
+<div id="drawing" class="sky">
+
+  <div class="sun">
+    
+  </div>
+  <div class="cloud">
+    <div class="fluff1"></div>
+    <div class="fluff2"></div>
+    <div class="fluff3"></div>
+    <div class="fluff4"></div>
+    <div class="fluff5"></div>
+  </div>
+  <div class="grass">
+  
+  </div>
+</div>
+<style>
+  #drawing {
+    position: relative;
+    width: 100%;
+    border: 5px solid #777d3e;
+    height: 400px;
+  }
+  
+  .sky {
+    z-index: 0;
+  }
+  
+  .grass {
+    position: absolute;
+    height: 70px;
+    border-top: 3px solid black;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+  
+  .sun {
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 150px;
+    z-index: 10;
+  }
+  
+  .cloud div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+    position: absolute;
+  }
+  
+  .cloud {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+  }
+  
+  .fluff1 {
+    top: -20px;
+    left: -34px;
+  }
+  
+  .fluff2 {
+    top: 5px;
+    left: 40px;
+  }
+  
+  .fluff3 {
+    top: 50px;
+    left: 90px;
+  }
+  
+  .fluff4 {
+    top: 60px;
+    left: 40px;
+  }
+  
+  .fluff5 {
+    top: 25px;
+    left: 60px;
+  }
+  
+  
+</style>

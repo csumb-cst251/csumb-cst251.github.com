@@ -1,0 +1,29 @@
+body {
+  background-color: #ecddc6;
+  
+  color: #383005;
+}
+
+#flier {
+  width: 700px;
+  margin: 50px auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+img {
+  float: right;
+  margin: 5px 0 5px 5px;
+  padding: 2px;
+}
+
+img.left {
+  float: left;
+  margin: 5px 5px 5px 0;
+}
+
+.clear {
+  clear: both;
+}
