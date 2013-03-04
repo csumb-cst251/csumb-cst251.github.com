@@ -1,0 +1,45 @@
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  padding: 5px 15px;
+}
+
+.intro {
+  border-top: 2px solid #828282;
+  border-left: 2px solid #828282;
+  border-bottom: 2px solid #828282;
+  border-right: 2px solid #828282;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+img {
+  margin-left: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-right: auto;
+  display: block;
+}
+
+.synergy {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.synergy .intro {
+  border-top: 5px solid #7ea2d3;
+  border-left: 5px solid #7ea2d3;
+  border-bottom: 5px solid #040f1e;
+  border-right: 5px solid #040f1e;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px; 
+}
+
