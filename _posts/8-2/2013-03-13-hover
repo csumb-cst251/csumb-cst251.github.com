@@ -1,0 +1,13 @@
+---
+layout: example-css
+title: Hover state
+day: 8-2
+css : |
+  .pequod:hover a {
+    border: 3px solid red;
+  }
+---
+<div class="pequod">
+  <a class="ishmael" href"ishmael">Call me ishmael!</a>
+</div>
+<a href="whale">THE WHIIIIITEEE WHAAALEEE!</a>
