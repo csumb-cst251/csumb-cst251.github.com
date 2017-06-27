@@ -1,5 +1,2 @@
-markdown: rdiscount
+baseurl: "/cst251/"
 pygments: true
-
-rdiscount:
-  extensions: []
